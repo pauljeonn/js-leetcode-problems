@@ -44,7 +44,7 @@ console.log(isValid('{'));
 console.log(isValid(']'));
 
 // #2
-// 더 간결하게 stack.pop() 처리
+// 더 간결한 stack.pop() 처리
 
 var isValid2 = function (s) {
 	let stack = [];
