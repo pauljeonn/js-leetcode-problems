@@ -4,6 +4,7 @@ var maxSubArray = function (nums) {
 	// 처음 숫자가 음수면 최종합에서 제외시켜야된다.
 	let current = Math.max(max, 0);
 
+	// 배열의 두번째 요소부터 최댓값 비교를 시작한다.
 	for (let i = 1; i < nums.length; i++) {
 		// 현재까지 합에 다음 숫자를 더해준다.
 		current += nums[i];
