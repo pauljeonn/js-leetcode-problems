@@ -35,12 +35,15 @@ var maxArea2 = function (height) {
 	let i = 0;
 	let j = height.length - 1;
 
+  // 두 요소 사이의 간격이 1이 될때까지 반복한다
 	while (j - i > 0) {
 		let a = height[i];
 		let b = height[j];
 		let v = Math.min(a, b) * (j - i);
+    // 최댓값을 매번 구한다
 		max = Math.max(max, v);
 
+    // 더 작은 요소를 이동시킨다
 		if (a <= b) {
 			i++;
 		} else {
