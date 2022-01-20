@@ -52,6 +52,7 @@ MyQueue2.prototype.push = function (x) {
 
 // pop 메서드
 MyQueue2.prototype.pop = function () {
+  // stack2에 요소가 없으면 stack1에서 받아온다.
 	if (this.stack2.length === 0) {
 		while (this.stack1.length > 0) {
 			this.stack2.push(this.stack1.pop());
@@ -62,6 +63,7 @@ MyQueue2.prototype.pop = function () {
 
 // peek 메서드
 MyQueue2.prototype.peek = function () {
+  // stack2에 요소가 없으면 stack1에서 받아온다.
 	if (this.stack2.length === 0) {
 		while (this.stack1.length > 0) {
 			this.stack2.push(this.stack1.pop());
