@@ -21,7 +21,7 @@ console.log(twoSum([], 6));
 console.log(twoSum([1, 2, 3, 4, 5, 6], 100));
 
 // solution #2: Hash table solution - O(n)
-var twoSum2 = function (nums, target) {
+const twoSum2 = (nums, target) => {
 	if (nums.length === 0 || nums.length === 1) return null;
 	let hash = {};
 
